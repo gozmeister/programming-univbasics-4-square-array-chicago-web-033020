@@ -1,13 +1,10 @@
 def square_array(array)
   counter = 0
-  new_array = []
+  squared_numbers = []
   while counter < array.length do
-    new_array.push(array[counter] ** 2)
+    square = array[counter] ** 2
+    squared_numbers.push(square)
     counter +=1
   end
-  puts new_array
+  squared_numbers
 end
-
-numbers = [1, 2, 3, 4]
-
-puts square_array(numbers)
